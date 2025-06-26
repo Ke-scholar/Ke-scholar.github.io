@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调月莉音随机涩图</title>
+    <style>
+        img {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var pic = new Array;
+        for(var i = 0;i < 21;i ++)
+            pic[i] = "./img/LiYin (" + (i+1) +").png";
+        parseInt(Math.random() * (pic.length), 10);
+        var choose = Math.floor(Math.random() * (pic.length));
+        document.write('<img src="' + pic[choose] + ' ">');
+    </script>
+</body>
+
+</html>
